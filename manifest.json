@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Goodreads ⇄ StoryGraph",
+  "version": "1.0.0",
+  "description": "Links Goodreads and StoryGraph book pages to each other and mirrors shelf status (to read, currently reading, read, did not finish) both ways.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.goodreads.com/*",
+    "https://app.thestorygraph.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.goodreads.com/book/show/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://app.thestorygraph.com/books/*"
+      ],
+      "js": [
+        "content-storygraph.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

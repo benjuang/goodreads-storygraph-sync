@@ -1,0 +1,5 @@
+#gr2sg-link{position:fixed;right:16px;bottom:16px;z-index:99999;padding:10px 14px;border-radius:999px;background:#14919b;color:#fff!important;font:600 14px/1 system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+#gr2sg-link:hover{background:#0e7078}
+#gr2sg-link.gr2sg-search{background:#666}
+#gr2sg-toast{position:fixed;right:16px;bottom:64px;z-index:99999;padding:8px 12px;border-radius:8px;background:#222;color:#fff;font:13px system-ui,sans-serif;opacity:0;transition:opacity .2s}
+#gr2sg-toast.show{opacity:1}
