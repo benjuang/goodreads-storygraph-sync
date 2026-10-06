@@ -17,3 +17,7 @@ You must be logged in to both sites in the same browser. No data leaves your bro
 - Relies on both sites' current page markup, so it may break when they change.
 - StoryGraph → Goodreads sync opens the Goodreads book page in a background tab and clicks the shelf button.
 - Not affiliated with Goodreads or The StoryGraph.
+
+## License
+
+GPL-3.0-or-later. See [LICENSE](LICENSE).
